@@ -1,0 +1,14 @@
+#!/bin/bash
+
+if [ "$#" -ne 1 ]; then
+  echo "start or stop (all lower case) required" >&2
+  exit 1
+fi
+
+if [ $1 != "start" -a $1 != "stop" ]; then
+  echo "start or stop (all lower case) required" >&2
+  exit 1
+fi
+
+sudo service elasticsearch $1
+sudo service kibana $1
