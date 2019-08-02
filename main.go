@@ -1,11 +1,14 @@
 package main
 
-import "os"
-import "log"
-import "strconv"
-import "github.com/orb15/gostream/opts"
-import "github.com/orb15/gostream/msggen"
-import "github.com/orb15/gostream/elastic"
+import (
+"os"
+"log"
+"strconv"
+
+"github.com/orb15/gostream/opts"
+"github.com/orb15/gostream/msggen"
+"github.com/orb15/gostream/elastic"
+)
 
 func main() {
 
